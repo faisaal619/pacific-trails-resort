@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Pacific Trails Resort offers you an easy and uncomplicated online reservations system that allows you to book in our website to save time and any hassle .">
+    <title>Pacific Trails Resort :: Reservations </title>
+    <link rel="stylesheet" href="pacific.css">
+    <script src="https://kit.fontawesome.com/7681049db8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <h1><a href="index.html">Pacific Trails Resorts</a></h1>
+</header>
+
+<!--nav>ul>li*4>a-->
+<nav>
+       <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yurts.html">Yurts</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+         <li><a href="OurFamily.html">Our Family</a></li>
+      </ul>
+</nav>
+
+ <main>
+     <h2>Reservations at Pacific Trails</h2>
+     <h3>Contact us Today</h3>
+     <P>Required fields are marked with an asterisk *</P>
+     
+     <form action="https://webdevbasics.net/scripts/pacific.php" method="post">
+         
+         <label for="myFName">*First Name:</label>
+         <input type="text" id="myFName" name="myFName" required="required">
+           
+         <label for="myLName">*Last Name:</label>
+         <input type="text" id="myLName" name="myLName" required="required">
+         
+         <label for="myEmail">*Email:</label>
+         <input type="Email" id="myEmail" name="myEmail" required="required">
+          
+         <label for="myPhone">Phone:</label>
+         <input type="tel" id="myPhone" name="myPhone" maxlength="12">
+          
+         <label for="myArrival">*Arrival Date:</label>
+         <input type="date" id="myArrival" name="myArrival" >
+          
+           <label for="myNights">*Nights:</label>
+         <input type="number" id="myNights" name="myNights" min="1" max="14">
+         
+         <label for="myComments">*Comments:</label>
+         <textarea name="myComment" id="myComment" cols="30" rows="2" required="required"></textarea>
+         
+         <input type="submit" value="Submit">
+     </form>
+     
+     <div>
+         <p><span class="resort">pacific Trails Resort</span><br>
+         12010 Pacific Trails Road <br>
+         Zephyr, CA 95555 <br><br>
+         888-555-5555
+         </p>
+     </div>
+ </main>
+<!--   footer>p*2-->
+   <footer>
+       <p>Copyright &copy;2020 pacific Trails Resort<br>
+       Faisal Alasadi</p>
+   </footer>
+  </div><!-- This closes my wrapper div-->
+</body>
+</html>
